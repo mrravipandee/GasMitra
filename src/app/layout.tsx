@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Load Ubuntu with multiple weights
 const ubuntu = Ubuntu({
@@ -62,7 +64,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.variable} font-sans`}>{children}</body>
+      <body className={`${ubuntu.variable} font-sans`}>
+        <Navbar />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }
