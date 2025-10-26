@@ -1,7 +1,11 @@
+import HeroSection from "@/components/HeroSection";
+
 export default function home() {
   return (
     <>
-      <h1 className="text-4xl mt-9">Home Page</h1>
+      <div className="bg-gradient-to-br from-orange-50/50 to-gray-50/30">
+        <HeroSection />
+      </div>
     </>
   )
 }
