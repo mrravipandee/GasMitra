@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import HowItWorks from "@/components/HowItWorks";
 import Services from "@/components/Services";
 
 export default function home() {
@@ -7,6 +8,7 @@ export default function home() {
       <div className="bg-gradient-to-br from-orange-50/50 to-gray-50/30">
         <HeroSection />
         <Services />
+        <HowItWorks />
       </div>
     </>
   )
