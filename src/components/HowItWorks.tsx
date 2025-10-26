@@ -92,9 +92,7 @@ const HowItWorks = () => {
 
                             {/* Connector Line (for desktop) */}
                             {index < steps.length - 1 && (
-                                <div className="hidden md:block absolute top-12 -right-8git add .
-git commit -m "feat: add 'Benefits' section highlighting GasMitra advantages with icons and animations"
- w-8 h-0.5 bg-gray-300 z-10">
+                                <div className="hidden md:block absolute top-12 -right-8 w-8 h-0.5 bg-gray-300 z-10">
                                     <div className={`w-full h-full bg-secondaryText rounded-full`}></div>
                                 </div>
                             )}
