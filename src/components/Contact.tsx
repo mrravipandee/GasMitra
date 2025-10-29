@@ -50,7 +50,7 @@ const Contact = () => {
                             <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
                                 {/* Google Map Embed */}
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119981.25780677486!2d73.710556!3d19.999399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xcb07845d9d28215c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6640.522422290885!2d73.7294653!3d19.999399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddecbe9b3a34ed%3A0x74fedb8c4f18f530!2sSanjeev%20Nagar%2C%20Nasik%2C%20Maharashtra%20422010!5e1!3m2!1sen!2sin!4v1761659212690!5m2!1sen!2sin"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -78,7 +78,7 @@ const Contact = () => {
                                         <FaWhatsapp className="text-green-600 text-lg" />
                                     </div>
                                     <div>
-                                        <p className="text-primaryText font-semibold">+91 98765 43210</p>
+                                        <p className="text-primaryText font-semibold">+91 70585 48204</p>
                                         <p className="text-secondaryText text-sm">WhatsApp Quick Order</p>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                                         <FaPhoneAlt className="text-blue-600 text-lg" />
                                     </div>
                                     <div>
-                                        <p className="text-primaryText font-semibold">+91 98765 43210</p>
+                                        <p className="text-primaryText font-semibold">+91 70585 48204</p>
                                         <p className="text-secondaryText text-sm">Call Support</p>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                                         <MdEmail className="text-purple-600 text-lg" />
                                     </div>
                                     <div>
-                                        <p className="text-primaryText font-semibold">support@gasmitra.in</p>
+                                        <p className="text-primaryText font-semibold">gasmitra@gmail.com</p>
                                         <p className="text-secondaryText text-sm">Email Support</p>
                                     </div>
                                 </div>
@@ -123,11 +123,11 @@ const Contact = () => {
                                 <div className="text-sm text-secondaryText space-y-1">
                                     <div className="flex justify-between">
                                         <span>Mon - Sat:</span>
-                                        <span className="font-medium">6 AM - 11 PM</span>
+                                        <span className="font-medium">9 AM - 10 PM</span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span>Sun & Holidays:</span>
-                                        <span className="font-medium">7 AM - 10 PM</span>
+                                        <span className="font-medium">10 AM - 5 PM</span>
                                     </div>
                                     <div className="flex justify-between text-green-600 font-medium">
                                         <span>Emergency:</span>

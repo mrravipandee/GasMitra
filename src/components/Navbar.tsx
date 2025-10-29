@@ -62,6 +62,7 @@ export default function Navbar() {
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
+        { name: "Shop", href: "/shop" },
         { name: "Services", href: "/services" },
         { name: "Contact", href: "/contact" },
     ];
@@ -70,7 +71,7 @@ export default function Navbar() {
         <nav
             ref={navRef}
             className={`w-full fixed top-0 left-0 z-50 transition-all duration-500 ease-out ${isScrolled
-                ? "bg-white/98 backdrop-blur-xl shadow-2xl py-1"
+                ? "bg-white/98 backdrop-blur-xl shadow-2xl py-4"
                 : "bg-white/95 backdrop-blur-lg shadow-lg py-3"
                 } ${isMounted ? 'translate-y-0' : '-translate-y-full'}`}
             style={{
