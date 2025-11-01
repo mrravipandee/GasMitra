@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   title: "GasMitra - Fast LPG Gas Delivery in Nashik",
   description:
     "GasMitra provides instant LPG gas cylinder delivery in Nashik. Reliable, fast, and safe gas delivery services with easy online booking.",
+    icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+    },
   openGraph: {
     title: "GasMitra - Fast LPG Gas Delivery in Nashik",
     description:
@@ -24,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "/gasmitra.svg",
         width: 800,
         height: 600,
         alt: "GasMitra Logo",
