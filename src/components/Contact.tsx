@@ -14,8 +14,8 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission
-        console.log("Form submitted:", formData);
+        // Handle general contact form submission
+        console.log("Contact form submitted:", formData);
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -31,10 +31,10 @@ const Contact = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-primaryText mb-4">
-                        Book Your Gas Now
+                        Contact Us
                     </h2>
                     <p className="text-secondaryText text-lg max-w-2xl mx-auto">
-                        Need Gas? We&apos;ll deliver within hours! Fill out the form below or contact our support team.
+                        We&apos;d love to hear from you! Fill out the contact form below or reach out to our team using the information provided.
                     </p>
                 </div>
 
@@ -48,7 +48,6 @@ const Contact = () => {
                                 Find Us
                             </h3>
                             <div className="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                                {/* Google Map Embed */}
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6640.522422290885!2d73.7294653!3d19.999399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddecbe9b3a34ed%3A0x74fedb8c4f18f530!2sSanjeev%20Nagar%2C%20Nasik%2C%20Maharashtra%20422010!5e1!3m2!1sen!2sin!4v1761659212690!5m2!1sen!2sin"
                                     width="100%"
@@ -79,7 +78,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-primaryText font-semibold">+91 70585 48204</p>
-                                        <p className="text-secondaryText text-sm">WhatsApp Quick Order</p>
+                                        <p className="text-secondaryText text-sm">WhatsApp Support</p>
                                     </div>
                                 </div>
 
@@ -141,8 +140,8 @@ const Contact = () => {
                     {/* Right: Contact Form */}
                     <div className="lg:col-span-2">
                         <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-                            <h3 className="text-2xl font-bold text-primaryText mb-2">Quick Gas Booking</h3>
-                            <p className="text-secondaryText mb-8">Fill this form and get delivery within hours</p>
+                            <h3 className="text-2xl font-bold text-primaryText mb-2">Get In Touch</h3>
+                            <p className="text-secondaryText mb-8">Reach out with questions, feedback, or requests—our team will respond promptly.</p>
 
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -174,27 +173,27 @@ const Contact = () => {
                                 </div>
 
                                 <div className="transform transition-all duration-300 hover:scale-105">
-                                    <label className="block text-primaryText font-semibold mb-2">Delivery Address *</label>
+                                    <label className="block text-primaryText font-semibold mb-2">Address (Optional)</label>
                                     <textarea
                                         name="address"
                                         value={formData.address}
                                         onChange={handleChange}
-                                        placeholder="Enter your complete address with landmarks"
-                                        rows={3}
+                                        placeholder="Enter your address (if needed)"
+                                        rows={2}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-formField focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 placeholder-formText resize-none"
-                                        required
                                     ></textarea>
                                 </div>
 
                                 <div className="transform transition-all duration-300 hover:scale-105">
-                                    <label className="block text-primaryText font-semibold mb-2">Message (Optional)</label>
+                                    <label className="block text-primaryText font-semibold mb-2">Message *</label>
                                     <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        placeholder="Any special instructions or emergency notes..."
-                                        rows={3}
+                                        placeholder="How can we help you? Please write your question or message."
+                                        rows={4}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-formField focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 placeholder-formText resize-none"
+                                        required
                                     ></textarea>
                                 </div>
 
@@ -202,12 +201,12 @@ const Contact = () => {
                                     type="submit"
                                     className="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-orange-600 transform hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                                 >
-                                    <FaWhatsapp className="text-lg" />
-                                    Book Gas Delivery
+                                    <MdEmail className="text-lg" />
+                                    Send Message
                                 </button>
 
                                 <p className="text-center text-secondaryText text-sm">
-                                    We&apos;ll confirm your order via WhatsApp within 5 minutes
+                                    Our team will contact you at the earliest possible.
                                 </p>
                             </form>
                         </div>
